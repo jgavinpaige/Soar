@@ -91,16 +91,19 @@
 
 .content-acronym-wrapper:hover h1 {
     color: transparent;
+    user-select: none;
     transition: color .5s;
 }
 
 .content-acronym-wrapper:hover h1 span {
     color: transparent;
+    user-select: none;
     transition: color .5s;
 }
 
 .content-acronym-wrapper:hover p {
     color: #111;
+    user-select: text;
     transition: color .5s;
 }
 
@@ -116,6 +119,7 @@
 .content-acronym-wrapper p {
     position: absolute;
     color: transparent;
+    user-select: none;
     width: 60%;
     top: 50%;
     left: 50%;
