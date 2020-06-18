@@ -195,7 +195,7 @@
     }
     
     .content-header-wrapper p {
-        font-size: 14px;
+        font-size: 10px;
         transition: font-size .5s;
     }
 }
