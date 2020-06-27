@@ -278,6 +278,8 @@
 /* Services */
 .services-content-wrapper {
     padding: 20px;
+    font-size: 16px;
+    transition: font-size .5s;
 }
 
 .services-content-header-wrapper {
@@ -321,6 +323,7 @@
 @media screen and (min-width: 640px) {
     .services-content-wrapper {
         font-size: 20px;
+        transition: font-size .5s;
     }
     .services-content-header-wrapper {
         font-size: 25px;
@@ -389,6 +392,71 @@
         transition: font-size .5s;
     }
     .values-content-header-wrapper {
+        font-size: 18px;
+        transition: font-size .5s;
+    }
+}
+
+/* Contact */
+.contact-content-wrapper {
+    padding: 20px;
+}
+
+.contact-content-wrapper input, #message {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 30px;
+    border: 3px solid #aaa;
+    border-radius: 15px;
+    padding: 3px;
+    outline: none;
+    transition: font-size .5s;
+}
+
+#message {
+    width: 100%;
+}
+
+.contact-content-wrapper input::placeholder, #message::placeholder {
+    color: rgba(170, 170, 170, 0.274);
+}
+
+#submit {
+    border: 3px solid #aaa;
+    background-color: #fff;
+    color: #aaa;
+    transition: background-color 1s, color 1s;
+}
+
+#submit:hover {
+    border: 0px;
+    padding: 6px;
+    background-color: #aaa;
+    color: #fff;
+    transition: background-color 1s, color 1s;
+}
+
+#submit:active {
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+    .contact-content-wrapper {
+        width: 860px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-content-wrapper, .contact-content-wrapper input, #message {
+        font-size: 24px;
+        transition: font-size .5s;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contact-content-wrapper, .contact-content-wrapper input, #message {
         font-size: 18px;
         transition: font-size .5s;
     }
